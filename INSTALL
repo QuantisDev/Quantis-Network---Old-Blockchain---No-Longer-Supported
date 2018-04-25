@@ -1,0 +1,9 @@
+Building Quantis
+
+See doc/readme-qt.rst for instructions on building Quantis QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Quantis.
+
+See doc/build-*.txt for instructions on building quantisd,
+the intended-for-services, no-graphical-interface, reference
+implementation of Quantis.
