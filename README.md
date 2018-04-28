@@ -21,7 +21,7 @@ Quantis is a hybrid PoW/PoS-based cryptocurrency with masternodes.
 * PoS Reward:
     * 3 QUAN to masternodes
     * 2 QUAN to staking
-* PoS Minimum Age: 1 hour
+* PoS Minimum Age: 24 hours
 * PoS Maximum Age: none
 
 ## Masternodes
