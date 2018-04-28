@@ -1,10 +1,14 @@
 # Quantis development tree
 
+TO build use
+
+Build with:  make -j4 -f makefile.unix RELEASE=1
+
 Quantis is a hybrid PoW/PoS-based cryptocurrency with masternodes.
 
 ## PoW
 * Algorithm: Scrypt
-* PoW Supply: 15 million
+* PoW Supply: unlimited
 * PoW Spacing: 30 Seconds
 * PoW Interval: 5 blocks 
 * PoW Reward:
@@ -17,7 +21,7 @@ Quantis is a hybrid PoW/PoS-based cryptocurrency with masternodes.
 * PoS Reward:
     * 3 QUAN to masternodes
     * 2 QUAN to staking
-* PoS Minimum Age: 5 hour
+* PoS Minimum Age: 1 hour
 * PoS Maximum Age: none
 
 ## Masternodes
