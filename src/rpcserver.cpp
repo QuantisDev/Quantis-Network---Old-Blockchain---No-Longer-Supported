@@ -630,7 +630,7 @@ void StartRPCThreads()
     }
 
     rpc_worker_group = new boost::thread_group();
-    for (int i = 0; i < GetArg("-rpcthreads", 4); i++)
+    for (int i = 0; i < GetArg("-rpcthreads", 12); i++)
         rpc_worker_group->create_thread(boost::bind(&asio::io_service::run, rpc_io_service));
 }
 
@@ -780,7 +780,7 @@ void ServiceConnection(AcceptedConnection *conn)
             conn->stream() << HTTPReply(HTTP_UNAUTHORIZED, "", false) << std::flush;
             break;
         }
-        if (mapHeaders["connection"] == "close")
+        if ((mapHeaders["connection"] == "close") || (!GetBoolArg("-rpckeepalive", false)))
             fRun = false;
 
         JSONRequest jreq;

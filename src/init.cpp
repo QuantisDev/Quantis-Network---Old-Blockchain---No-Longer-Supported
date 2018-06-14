@@ -255,7 +255,8 @@ std::string HelpMessage()
         strUsage += "  -rpcconnect=<ip>       " + _("Send commands to node running on <ip> (default: 127.0.0.1)") + "\n";
         strUsage += "  -rpcwait               " + _("Wait for RPC server to start") + "\n";
     }
-    strUsage += "  -rpcthreads=<n>        " + _("Set the number of threads to service RPC calls (default: 4)") + "\n";
+    strUsage += "  -rpcthreads=<n>        " + _("Set the number of threads to service RPC calls (default: 12)") + "\n";
+    strUsage += "  -rpckeepalive=<n>      " + _("RPC support for HTTP persistent connections (default: false)") + "\n";
     strUsage += "  -blocknotify=<cmd>     " + _("Execute command when the best block changes (%s in cmd is replaced by block hash)") + "\n";
     strUsage += "  -walletnotify=<cmd>    " + _("Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)") + "\n";
     strUsage += "  -confchange            " + _("Require a confirmations for change (default: 0)") + "\n";
